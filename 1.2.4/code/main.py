@@ -11,9 +11,7 @@ with open('../data/input_data.txt', 'r') as d:
         key, value = line.split(' = ')
         vars[key] = list(map(float, value.rstrip().split(', ')))
 
-av = errors.mean(vars['a'])
-
-print(av)
-
-save_var_latex('average', av)
+for a in vars.keys():
+    vars[a] = errors.mean(vars[a])
+    save_var_latex(str(a), vars[a])
 
