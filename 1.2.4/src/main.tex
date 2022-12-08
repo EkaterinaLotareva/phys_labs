@@ -11,15 +11,23 @@
 \usepackage{amsmath,amssymb}
 \usepackage{indentfirst}
 \usepackage{hyperref}
+
+% package to open file containing variables
+\usepackage{datatool, filecontents}
+\DTLsetseparator{,}% Set the separator between the columns.
+
+% import data
+\DTLloadrawdb[noheader, keys={thekey,thevalue}]{output_data}{C:/labas/1.2.4/data/output_data.csv}
+% Loads output_data.csv with column headers 'thekey' and 'thevalue'
+\newcommand{\var}[1]{\DTLfetch{output_data}{thekey}{#1}{thevalue}}
+
 % Document
 \begin{document}
 
-\begin{centering}
-\section* {Обработка данных}
-\end{centering}
-hello dff
-saa
+    \begin{centering}
+        \section* {Обработка данных}
+    \end{centering}
 
-ddwdw
+    \var{average}
 
 \end{document}
