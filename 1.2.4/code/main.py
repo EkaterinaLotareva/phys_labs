@@ -6,7 +6,8 @@ print(os.path.abspath('output_data.csv'))
 
 vars = {}
 random_error = {}
-sys_error = 0.13
+sys_error_1 = 0.13
+sys_error_2 = 0.005
 full_error = {}
 relative_error = {}
 
@@ -24,12 +25,15 @@ for a in vars.keys():
 
 for a in vars.keys():
     if len(vars[a]) > 1:
-        full_error[a] = round(errors.full_error(vars[a], sys_error), 3)
+        full_error[a] = round(errors.full_error(vars[a], sys_error_1), 3)
         save_var_latex('fe' + str(a), full_error[a])
 
 for a in vars.keys():
     if len(vars[a]) > 1:
-        relative_error[a] = round(errors.relative_error(vars[a], sys_error), 3)
+        relative_error[a] = round(errors.relative_error(vars[a], sys_error_1), 4)
+        save_var_latex('re' + str(a), relative_error[a])
+    else:
+        relative_error[a] = round(errors.relative_error(vars[a], sys_error_2), 4)
         save_var_latex('re' + str(a), relative_error[a])
 
 for a in vars.keys():
