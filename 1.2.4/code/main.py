@@ -6,16 +6,31 @@ print(os.path.abspath('output_data.csv'))
 
 vars = {}
 random_error = {}
+sys_error = 0.13
+full_error = {}
+relative_error = {}
 
 with open('../data/input_data.txt', 'r') as d:
     for line in d:
         key, value = line.split(' = ')
         vars[key] = list(map(float, value.rstrip().split(', ')))
 
-for i in vars.keys():
-    if len(vars[i]) > 1:
-         random_error[i] = errors.standart_deviation(vars[i])
-         save_var_latex('random_error_' + str(i), random_error[i])
+print(vars)
+
+for a in vars.keys():
+    if len(vars[a]) > 1:
+         random_error[a] = round(errors.standart_deviation(vars[a]), 3)
+         save_var_latex('rde' + str(a), random_error[a])
+
+for a in vars.keys():
+    if len(vars[a]) > 1:
+        full_error[a] = round(errors.full_error(vars[a], sys_error), 3)
+        save_var_latex('fe' + str(a), full_error[a])
+
+for a in vars.keys():
+    if len(vars[a]) > 1:
+        relative_error[a] = round(errors.relative_error(vars[a], sys_error), 3)
+        save_var_latex('re' + str(a), relative_error[a])
 
 for a in vars.keys():
     vars[a] = round(errors.mean(vars[a]), 3)

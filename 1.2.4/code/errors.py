@@ -7,7 +7,7 @@ def standart_deviation(a):
 
 
 def full_error(a, system_error):
-    return (standart_deviation(a) + system_error)
+    return (standart_deviation(a)**2 + system_error**2)**0.5
 
 
 def relative_error(a, system_error):
