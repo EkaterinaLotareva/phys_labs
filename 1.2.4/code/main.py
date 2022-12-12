@@ -135,3 +135,22 @@ error_42 = errors.indirect_error('T4y ** 2 / T4x ** 2', ('T4y', 'T4x'), (vars['T
 save_var_latex('form42', round(form_42, 3))
 save_var_latex('error42', error_42)
 
+
+
+axis_1x = 1 / (vars['T1x']**2 - vars['Tp']**2)**0.5
+axis_2x = 1 / (vars['T2x']**2 - vars['Tp']**2)**0.5
+axis_2y = 1 / (vars['T2y']**2 - vars['Tp']**2)**0.5
+axis_2z = 1 / (vars['T2z']**2 - vars['Tp']**2)**0.5
+axis_3x = 1 / (vars['T3x']**2 - vars['Tp']**2)**0.5
+axis_3y = 1 / (vars['T3y']**2 - vars['Tp']**2)**0.5
+axis_4x = 1 / (vars['T4x']**2 - vars['Tp']**2)**0.5
+axis_4y = 1 / (vars['T4y']**2 - vars['Tp']**2)**0.5
+
+save_var_latex('ax1x', round(axis_1x, 3))
+save_var_latex('ax2x', round(axis_2x, 3))
+save_var_latex('ax2y', round(axis_2y, 3))
+save_var_latex('ax2z', round(axis_2z, 3))
+save_var_latex('ax3x', round(axis_3x, 3))
+save_var_latex('ax3y', round(axis_3y, 3))
+save_var_latex('ax4x', round(axis_4x, 3))
+save_var_latex('ax4y', round(axis_4y, 3))

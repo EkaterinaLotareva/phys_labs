@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  12 DEC 2022 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  12 DEC 2022 19:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1259,16 +1259,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-{C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-(C:/labas\1.2.4\auxil\main.aux)
+{C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: File `plots.par_xy' not found on input line 176.
+
+
+main.tex:176: LaTeX Error: Unknown graphics extension: .par_xy.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176             \includegraphics{plots.par_xy}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[2] (C:/labas\1.2.4\auxil\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26664 strings out of 475281
- 488866 string characters out of 2774065
- 883896 words of memory out of 3000000
- 47622 multiletter control sequences out of 15000+600000
+ 26710 strings out of 475281
+ 489610 string characters out of 2774065
+ 885322 words of memory out of 3000000
+ 47652 multiletter control sequences out of 15000+600000
  479898 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,94p,470b,551s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1278,13 +1293,14 @@ larm1200.pk> <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
 600\larm0800.pk> <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
 /dpi600\labx1440.pk> <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
 -t2a/dpi600\labx1728.pk><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on C:/labas\1.2.4\out\main.pdf (2 pages, 88738 bytes).
+e1/public/amsfonts/cm/cmex10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on C:/labas\1.2.4\out\main.pdf (2 pages, 98905 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
