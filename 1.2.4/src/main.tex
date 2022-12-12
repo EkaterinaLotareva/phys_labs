@@ -12,12 +12,13 @@
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
 \usepackage[usenames]{color}
-\usepackage[a4paper,top=1cm,bottom=1cm,left=0.75cm,right=0.75cm,marginparwidth=0.75cm]{geometry}
+\usepackage[a4paper,top=0.75cm,bottom=0.75cm,left=0.75cm,right=0.75cm,marginparwidth=0.75cm]{geometry}
 \usepackage{colortbl}
-%\usepackage{float}
-\usepackage{graphicx}
+\usepackage{graphicx}%Вставка картинок правильная
+\usepackage{float}%"Плавающие" картинки
 \usepackage{wrapfig}
 \usepackage{hyperref}
+\usepackage{subcaption}
 \usepackage[rgb]{xcolor}
 \usepackage{todonotes}
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
@@ -159,14 +160,46 @@
         \frac{T_{\text{4y}}^2}{T_{\text{4x}}^2} = (\var{form42} \pm \var{error42}), \quad
         1 + \frac{h_{\text{д}}^2}{3 r_{\text{д}}^2} = (\var{form41} \pm \var{error41})$$
 
-        \end{itemize}
+    \end{itemize}
 
-        \ {Эллипсоиды инерции}
+    \subsection* {Эллипсоиды инерции}
 
-        Поскольку мы не знаем сами моменты инерции, но знаем их соотношения и пропорциональность квадратам периодов,
-        построим эллипсоиды в произвольном масштабе.
+    Поскольку мы не знаем сами моменты инерции, но знаем их соотношения и пропорциональность квадратам периодов,
+    построим сечения эллипсоидов в произвольном масштабе, согласно уравнению эллипсоида:
+
+    $$\frac{x^2}{A^2} + \frac{y^2}{B^2} + \frac{z^2}{C^2} = 1$$
+
+    \begin{itemize}
+
+        \item{Параллелепипед}
+
+        $$A = \frac{1}{\sqrt{T_{\text{2x}}^2 - T_{\text{p}}^2}} = \var{ax2x}, \qquad
+        B = \frac{1}{\sqrt{T_{\text{2y}}^2 - T_{\text{p}}^2}} = \var{ax2y}, \qquad
+        C = \frac{1}{\sqrt{T_{\text{2z}}^2 - T_{\text{p}}^2}} = \var{ax2z}$$
 
 
+        \begin{figure}[h!!]
+
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{par_xz.png}
+                \caption*{Сечение плоскостью xz}
+                \label{fig:subim1}
+            \end{subfigure}
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{par_xy.png}
+                \caption*{Сечение плоскостью xy}
+                \label{fig:subim2}
+            \end{subfigure}
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{par_yz.png}
+                \caption*{Сечение плоскостью yz}
+                \label{fig:subim3}
+            \end{subfigure}
+
+        \end{figure}
+
+
+    \end{itemize}
 
 
 \end{document}
