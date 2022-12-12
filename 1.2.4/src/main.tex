@@ -12,7 +12,7 @@
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
 \usepackage[usenames]{color}
-\usepackage[a4paper,top=0.75cm,bottom=0.75cm,left=0.75cm,right=0.75cm,marginparwidth=0.75cm]{geometry}
+\usepackage[a4paper,top=0.9cm,bottom=0.9cm,left=0.75cm,right=0.75cm,marginparwidth=0.75cm]{geometry}
 \usepackage{colortbl}
 \usepackage{graphicx}%Вставка картинок правильная
 \usepackage{float}%"Плавающие" картинки
@@ -150,15 +150,15 @@
         \item {Цилиндр}
 
         $$\frac{T_{\text{3y}}^2}{T_{\text{3x}}^2} = 1 + \frac{h_{\text{ц}}^2}{3 r_{\text{ц}}^2}, \quad
-        \frac{T_{\text{3y}}^2}{T_{\text{3x}}^2} = (\var{form32} \pm \var{error32}), \quad
-        1 + \frac{h_{\text{ц}}^2}{3 r_{\text{ц}}^2} = (\var{form31} \pm \var{error31})$$
+        \frac{T_{\text{3y}}^2}{T_{\text{3x}}^2} = (1.652 \pm 0.525), \quad
+        1 + \frac{h_{\text{ц}}^2}{3 r_{\text{ц}}^2} = (2.661 \pm 0.0042)$$
 
 
         \item {Диск}
 
         $$\frac{T_{\text{4y}}^2}{T_{\text{4x}}^2} = 1 + \frac{h_{\text{д}}^2}{3 r_{\text{д}}^2}, \quad
-        \frac{T_{\text{4y}}^2}{T_{\text{4x}}^2} = (\var{form42} \pm \var{error42}), \quad
-        1 + \frac{h_{\text{д}}^2}{3 r_{\text{д}}^2} = (\var{form41} \pm \var{error41})$$
+        \frac{T_{\text{4y}}^2}{T_{\text{4x}}^2} = (0.988 \pm 0.3721), \quad
+        1 + \frac{h_{\text{д}}^2}{3 r_{\text{д}}^2} = (1.023 \pm 0.0001)$$
 
     \end{itemize}
 
@@ -198,6 +198,38 @@
 
         \end{figure}
 
+
+        \item {Куб}
+        $$ A = B = \frac{1}{\sqrt{T_{\text{1x}}^2 - T_{\text{p}}^2}} = \var{ax1x} $$
+
+
+        \item{Диск}
+        $$A = \frac{1}{\sqrt{T_{\text{3x}}^2 - T_{\text{p}}^2}} = \var{ax3x}, \qquad
+        B = \frac{1}{\sqrt{T_{\text{3y}}^2 - T_{\text{p}}^2}} = \var{ax3y}$$
+
+
+        \item{Цилиндр}
+
+        $$A = \frac{1}{\sqrt{T_{\text{4x}}^2 - T_{\text{p}}^2}} = \var{ax4x}, \qquad
+        B = \frac{1}{\sqrt{T_{\text{4y}}^2 - T_{\text{p}}^2}} = \var{ax4y}$$
+
+
+        \begin{figure}[h!!]
+
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{kub.png}
+                \caption*{Сечение куба плоскостью xy}
+            \end{subfigure}
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{disc.png}
+                \caption*{Сечение диска плоскостью xy}
+            \end{subfigure}
+            \begin{subfigure}{0.33\textwidth}
+                \includegraphics[width=\linewidth, height=\linewidth]{cil.png}
+                \caption*{Сечение цилиндра плоскостью xy}
+            \end{subfigure}
+
+        \end{figure}
 
     \end{itemize}
 

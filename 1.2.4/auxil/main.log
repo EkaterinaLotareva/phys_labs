@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  12 DEC 2022 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  12 DEC 2022 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,14 +1242,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(21.33955pt, 554.82877pt, 21.33955pt)
-* v-part:(T,H,B)=(21.33955pt, 802.36774pt, 21.33955pt)
+* v-part:(T,H,B)=(25.6073pt, 793.83224pt, 25.6073pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=554.82877pt
-* \textheight=802.36774pt
+* \textheight=793.83224pt
 * \oddsidemargin=-50.93044pt
 * \evensidemargin=-50.93044pt
-* \topmargin=-87.93044pt
+* \topmargin=-83.66269pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1310,19 +1310,31 @@ File: par_yz.png Graphic file (type png)
 <use par_yz.png>
 Package pdftex.def Info: par_yz.png  used on input line 194.
 (pdftex.def)             Requested size: 183.09094pt x 183.09508pt.
- [2 <./par_xz.png> <./par_xy.png> <./par_yz.png>] (C:/labas\1.2.4\auxil\main.au
-x)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ [2 <./par_xz.png> <./par_xy.png> <./par_yz.png>]
+<kub.png, id=42, 677.53125pt x 677.53125pt>
+File: kub.png Graphic file (type png)
+<use kub.png>
+Package pdftex.def Info: kub.png  used on input line 220.
+(pdftex.def)             Requested size: 183.09094pt x 183.09094pt.
+<disc.png, id=43, 677.53125pt x 542.025pt>
+File: disc.png Graphic file (type png)
+<use disc.png>
+Package pdftex.def Info: disc.png  used on input line 224.
+(pdftex.def)             Requested size: 183.09094pt x 183.09508pt.
+<cil.png, id=44, 677.53125pt x 542.025pt>
+File: cil.png Graphic file (type png)
+<use cil.png>
+Package pdftex.def Info: cil.png  used on input line 228.
+(pdftex.def)             Requested size: 183.09094pt x 183.09508pt.
+ [3 <./kub.png> <./disc.png> <./cil.png>] (C:/labas\1.2.4\auxil\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28143 strings out of 475281
- 517795 string characters out of 2774065
- 911433 words of memory out of 3000000
- 49081 multiletter control sequences out of 15000+600000
+ 28165 strings out of 475281
+ 518060 string characters out of 2774065
+ 909837 words of memory out of 3000000
+ 49099 multiletter control sequences out of 15000+600000
  480706 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,94p,470b,662s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1338,9 +1350,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on C:/labas\1.2.4\out\main.pdf (2 pages, 190900 bytes).
+Output written on C:/labas\1.2.4\out\main.pdf (3 pages, 279637 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
