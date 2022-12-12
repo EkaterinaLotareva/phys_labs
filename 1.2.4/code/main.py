@@ -81,3 +81,57 @@ save_var_latex('error24', error_24)
 
 
 
+
+form_11 = (vars['T1x'] ** 2 + vars['T1y'] ** 2 + vars['T1z'] ** 2) / 3
+error_11 = errors.indirect_error('(T1x ** 2 + T1y ** 2 + T1z ** 2) / 3', ('T1x', 'T1y', 'T1x'),
+                                 (vars['T1x'], vars['T1y'], vars['T1z']), (full_error['T1x'], full_error['T1y'], full_error['T1z']))
+
+save_var_latex('form11', round(form_11, 3))
+save_var_latex('error11', error_11)
+
+
+form_12 = (vars['T1y']**2 + vars['T2z']**2) / 2
+error_12 = errors.indirect_error('(T1y**2 + T1z**2) / 2', ('T1y', 'T1z'), (vars['T1y'], vars['T1z']),
+                                 (full_error['T1y'], full_error['T1z']))
+
+save_var_latex('form12', round(form_12, 3))
+save_var_latex('error12', error_12)
+
+
+form_13 = (vars['T1x']**2 + vars['T2z']**2) / 2
+error_13 = errors.indirect_error('(T1x**2 + T1z**2) / 2', ('T1x', 'T1z'), (vars['T1x'], vars['T1z']),
+                                 (full_error['T1x'], full_error['T1z']))
+
+save_var_latex('form13', round(form_13, 3))
+save_var_latex('error13', error_13)
+
+
+form_14 = (vars['T1y']**2 + vars['T2x']**2) / 2
+error_14 = errors.indirect_error('(T1y**2 + T1x**2) / 2', ('T1y', 'T1x'), (vars['T1y'], vars['T1x']),
+                                 (full_error['T1y'], full_error['T1x']))
+
+save_var_latex('form14', round(form_14, 3))
+save_var_latex('error14', error_14)
+
+print(vars)
+
+form_31 = 1 + (vars['hc']**2 / (3 * vars['rc']**2))
+error_31 = errors.indirect_error('1 + hc**2 / (3 * rc**2)', ('hc', 'rc'), (vars['hc'], vars['rc']), (0.005, 0.005))
+save_var_latex('form31', round(form_31, 3))
+save_var_latex('error31', error_31)
+
+form_32 = vars['T3y'] ** 2 / vars['T3x'] ** 2
+error_32 = errors.indirect_error('T3y ** 2 / T3x ** 2', ('T3y', 'T3x'), (vars['T3y'], vars['T3x']), (full_error['T3y'], full_error['T3x']))
+save_var_latex('form32', round(form_32, 3))
+save_var_latex('error32', error_32)
+
+form_41 = 1 + (vars['hd']**2 / (3 * vars['rd']**2))
+error_41 = errors.indirect_error('1 + hd**2 / (3 * rd**2)', ('hd', 'rd'), (vars['hd'], vars['rd']), (0.005, 0.005))
+save_var_latex('form41', round(form_41, 3))
+save_var_latex('error41', error_41)
+
+form_42 = vars['T4y'] ** 2 / vars['T4x'] ** 2
+error_42 = errors.indirect_error('T4y ** 2 / T4x ** 2', ('T4y', 'T4x'), (vars['T4y'], vars['T4x']), (full_error['T4y'], full_error['T4x']))
+save_var_latex('form42', round(form_42, 3))
+save_var_latex('error42', error_42)
+
