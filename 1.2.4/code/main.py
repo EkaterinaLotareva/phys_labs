@@ -7,7 +7,7 @@ import os
 vars = {}
 random_error = {}
 sys_error_1 = 0.13
-sys_error_2 = 0.005
+sys_error_2 = 0.05
 full_error = {}
 relative_error = {}
 sqares = {}
@@ -30,10 +30,10 @@ for a in vars.keys():
 
 for a in vars.keys():
     if len(vars[a]) > 1:
-        relative_error[a] = round(errors.relative_error(vars[a], sys_error_1), 4)
+        relative_error[a] = round(errors.relative_error(vars[a], sys_error_1), 3)
         save_var_latex('re' + str(a), relative_error[a])
     else:
-        relative_error[a] = round(errors.relative_error(vars[a], sys_error_2), 4)
+        relative_error[a] = round(errors.relative_error(vars[a], sys_error_2), 3)
         save_var_latex('re' + str(a), relative_error[a])
 
 for a in vars.keys():
@@ -50,7 +50,7 @@ form_21 = (vars['a'] ** 2 * vars['T2x'] ** 2 + vars['b'] ** 2 * vars['T2y'] ** 2
 error_21 = errors.indirect_error('(a ** 2 * T2x ** 2 + b ** 2 * T2y ** 2 + c**2 * T2z**2) / (a **2 + b**2 + c**2)',
                                   ('a', 'T2x', 'b', 'T2y', 'c', 'T2z'),
                                  (vars['a'], vars['T2x'], vars['b'], vars['T2y'], vars['c'], vars['T2z']),
-                                 (0.005, 0.133, 0.005, 0.13, 0.005, 0.13))
+                                 (0.05, 0.133, 0.05, 0.13, 0.05, 0.13))
 
 save_var_latex('form21', round(form_21, 3))
 save_var_latex('error21', error_21)

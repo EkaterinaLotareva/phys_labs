@@ -30,4 +30,4 @@ def indirect_error(function, varss, values, errors):
         n[i] = (sympy.diff(function, varss[i]) * errors[i]) ** 2
         lambd = sympy.lambdify([symb_vars], n[i])
         m[i] = lambd(values)
-    return round((sum(m)) ** 0.5, 4)
+    return round((sum(m)) ** 0.5, 3)
