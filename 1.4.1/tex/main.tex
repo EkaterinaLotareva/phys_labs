@@ -2,14 +2,42 @@
 %! Date = 14.12.2022
 
 % Preamble
-\documentclass[11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 % Packages
-\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage[usenames]{color}
+\usepackage[a4paper,top=0.9cm,bottom=0.9cm,left=0.75cm,right=0.75cm,marginparwidth=0.75cm]{geometry}
+\usepackage{colortbl}
+\usepackage{graphicx}%Вставка картинок правильная
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage[rgb]{xcolor}
+\usepackage{todonotes}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+\usepackage{makecell}
+
+
+% package to open file containing variables
+\usepackage{datatool, filecontents}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\DTLsetseparator{,}% Set the separator between the columns.
+
+% import data
+\DTLloadrawdb[noheader, keys={thekey,thevalue}]{output_data}{C:/labas/1.4.1/data/output_data.csv}
+% Loads output_data.csv with column headers 'thekey' and 'thevalue'
+\newcommand{\var}[1]{\DTLfetch{output_data}{thekey}{#1}{thevalue}}
 
 % Document
 \begin{document}
-iihihihij
 
 
 \end{document}
